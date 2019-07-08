@@ -1,0 +1,72 @@
+body {
+    margin: 40px;
+  }
+
+  .wrapper {
+    display: grid;
+grid-gap: 5px;
+    grid-template-columns: 400px 400px 500px;
+    grid-template-areas:
+"header  header  header "
+    "sidebar sidebar content"
+    "sidebar  sidebar  footer ";
+    
+}
+
+.buttonWrap {
+    display: grid;
+grid-gap: 80px;
+    grid-template-columns: 100px 100px 100x 100px 100px;
+    grid-template-areas:
+    "btn btn btn btn btn"
+    
+}
+
+  .sidebar {
+    grid-area: sidebar;
+    align-self: center;
+  }
+  
+  .content {
+    grid-area: content;
+    position: relative;
+    object-fit: cover;
+    width: 100%
+  }
+  
+  .header {
+    grid-area: header;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+.footertext{
+    float: right;
+}
+  .box {
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+
+.btn {
+    border: 4px solid #a8a5a5;
+    background-color: white;
+    color: black;
+    font-size: 48px;
+    cursor: pointer;
+    float: top;
+  }
+.default {
+    color: black;
+  }
+  
+  .default:hover {
+    background: #e7e7e7;
+  }
+
+  img {
+    border:4px solid #a8a5a5;
+ }
